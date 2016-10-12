@@ -64,9 +64,23 @@ namespace Assignment1
 
             length = Math.Sqrt(Math.Pow(deltaX, 2) + Math.Pow(deltaY, 2));
 
-            //Display the Length to Console
-            Console.WriteLine("Length is :" + length);
-   
+            //Display Length value to Console
+            Console.WriteLine("Length is :" + length.ToString("F3"));
+
+            double radians;
+            
+            //Calculate Radians
+            radians = Math.Atan2(deltaY,deltaX);
+            Console.WriteLine();
+            Console.WriteLine("Radians : " + radians);
+            Console.WriteLine();
+            double angle;
+
+            //Calculate Angle of the radians
+            angle = radians * (180 / Math.PI);
+            Console.WriteLine("Angle in Degrees :" + angle.ToString("F3"));
+
+
 
         }
     }
